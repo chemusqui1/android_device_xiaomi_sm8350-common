@@ -354,6 +354,11 @@ PRODUCT_PACKAGES += \
     NfcNci \
     SecureElement \
     Tag
+    
+PRODUCT_PACKAGES += \
+    jcos_nq_client \
+    ls_nq_client \
+    se_nq_extn_client
 
 PRODUCT_PACKAGES += \
     android.hardware.nfc_snxxx@1.2-service \
