@@ -185,6 +185,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            <instance>SIM2</instance>
        </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.sensorscalibrate</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorsCalibrate</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- eSEPowerManager -->
     <hal format="hidl">
         <name>vendor.qti.esepowermanager</name>
