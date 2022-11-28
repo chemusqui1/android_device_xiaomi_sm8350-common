@@ -237,8 +237,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
+# HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.base@1.0.vendor \
+    android.hidl.manager@1.0 \
+    android.hidl.manager@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    libhidltransport \
     libhidltransport.vendor \
+    libhwbinder \
     libhwbinder.vendor
 
 # HotwordEnrollement
@@ -354,20 +363,13 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc_snxxx@1.2-service \
+    android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
+    libchrome.vendor \
     NfcNci \
     SecureElement \
     Tag
-    
-PRODUCT_PACKAGES += \
-    jcos_nq_client \
-    ls_nq_client \
-    se_nq_extn_client
-
-PRODUCT_PACKAGES += \
-    android.hardware.nfc_snxxx@1.2-service \
-    android.hardware.secure_element@1.2.vendor \
-    libchrome.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
